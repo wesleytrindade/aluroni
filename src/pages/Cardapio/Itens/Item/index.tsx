@@ -1,5 +1,5 @@
-import styles from "./Item.module.scss";
-import classNames from "classnames";
+import styles from './Item.module.scss';
+import classNames from 'classnames';
 
 export interface ItemProps {
   title: string;
@@ -38,7 +38,7 @@ export function Item(item: ItemProps) {
           </div>
           <div className={styles.item__porcao}>{item.size}g</div>
           <div className={styles.item__qtdpessoas}>
-            Serve {item.serving} pessoa{item.serving === 1 ? "" : "s"}{" "}
+            Serve {item.serving} pessoa{item.serving === 1 ? '' : 's'}{' '}
           </div>
           <div className={styles.item__valor}>R$ {item.price.toFixed(2)}</div>
         </div>
